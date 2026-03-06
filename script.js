@@ -9,27 +9,27 @@ let Score = JSON.parse(localStorage.getItem("Score")) || {
         function playgame(playerMove){
             const computerMove = PickComputerMove();
             let result = "";
-            if(playerMove == "Rock" && computerMove == "Rock"){
+            if(playerMove == "rock" && computerMove == "Rock"){
                 result = "Tie."
-            }else if(playerMove == "Rock" && computerMove == "Paper"){
+            }else if(playerMove == "rock" && computerMove == "Paper"){
                 result = "You Lose."
-            }else if(playerMove == "Rock" && computerMove == "Scissors"){
+            }else if(playerMove == "rock" && computerMove == "Scissors"){
                 result = "You Win."
             }
 
-            if(playerMove == "Paper" && computerMove == "Rock"){
+            if(playerMove == "paper" && computerMove == "Rock"){
                 result = "You Win."
-            }else if(playerMove == "Paper" && computerMove == "Paper"){
+            }else if(playerMove == "paper" && computerMove == "Paper"){
                 result = "Tie."
-            }else if(playerMove == "Paper" && computerMove == "Scissors"){
+            }else if(playerMove == "paper" && computerMove == "Scissors"){
                 result = "You Lose."
             }
 
-            if(playerMove == "Scissors" && computerMove == "Rock"){
+            if(playerMove == "scissors" && computerMove == "Rock"){
                 result = "You Lose."
-            }else if(playerMove == "Scissors" && computerMove == "Paper"){
+            }else if(playerMove == "scissors" && computerMove == "Paper"){
                 result = "You Win."
-            }else if(playerMove == "Scissors" && computerMove == "Scissors"){
+            }else if(playerMove == "scissors" && computerMove == "Scissors"){
                 result = "Tie."
             }
 
@@ -63,4 +63,5 @@ let Score = JSON.parse(localStorage.getItem("Score")) || {
                 }
                 return computerMove;
             }
+
         }
